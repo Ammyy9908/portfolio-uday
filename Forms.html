@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head><title>Forms</title></head>
+    <body>
+    <form>
+       <h3> Welcome User....!!! please user given the form</h3>
+        
+        <hr>
+        
+        <h3>Text Box</h3>
+        <label>Name</label>
+        
+<input type="text" placeholder="Enter Name"
+       title="please enter minimum 3 ch.name"
+              pattern="[a-zA-Z]{3,10}" required>
+<p>{3,10}-Name should be of minimum 3 characters and maximum 10 characters</p> 
+<p>[a-zA-Z]Name should contain character only</p>
+        
+        
+        
+       <br><br>
+        <h3>Email</h3>
+        <label>Email:</label>
+        <input type="email" placeholder="Enter Your Email"
+       title="please enter valid email"
+              pattern="[a-zA-Z0-9@$*]+@[a-zA-Z]+_[a-z]{2,3}" required>
+        
+        <p>1.Before @ email should contain characters and symbols as mentioned in the code</p>
+        
+       <p> 2.After @ should contain charcter only and</p>
+        <p>3.Aafter .email should contain maximum 3 characters only</p>
+        <p>4."+" means any number of charcters user can enter , there is no maximum minimum range</p>
+        
+        <h3>Spin control</h3>
+        <label>Age</label>
+        <input type="number" min="18" max="29">
+        <p>1.If we are not using  "min" and "max" attribute, the default value for UP ARROW is 1 and it will increment by 1 for every click  of UP ARROW </p>
+        
+        <p>2.for Down ARROW  default value is -1 and it will decrease  the value by 1 after  every click of Down ARROW </p>
+        
+        <p>3.As per code Minimum age should be 18 and maximum age should be 29</p>
+        
+       <h3>phone_No:</h3>
+        <label>phone_No:</label>
+        <input type="text" placeholder="Enter your phone number" pattern="^[7,9]{1}[8,9]{9}$">
+        
+       
+      <h3>Calendar Box</h3> 
+        <label>Select Date</label>
+      <input type="date" min="1990-01-10"max="2000-01-10">
+        <p>1.In the input tag "type" attribute must be specified as "date" to create  "calendar box"  in the forma.t</p>
+        
+        
+        <p>2.By default calendar box  will display  the date in dd-mm-yyy format.</p>
+        
+        
+        <p>3.Using "min" and "max" attribute we can set the minimum and maximum dates to displayed in the calendar.</p>
+        
+        
+        <p>4.While specifying the value for min and max attribute "yyy-mm-dd" format must be used.</p>
+        
+        
+        <h3>Check Box</h3>
+        <label>Technicak Skill:</label>
+        <input type="checkbox">java
+        <input type="checkbox">C++
+        <input type="checkbox">Python
+        <input type="checkbox">HTML,js
+        
+   <p>Here we can select multiple options</p> 
+        
+        <h3>Select Box</h3>
+        <label>Select City:</label>
+        <select required>
+            
+        <option>Mumbai</option>
+        <option>Pune</option>
+        <option>Nagpur</option>
+        <option>Jalgaon</option>
+        
+        </select>
+        
+        
+        <p>All the options we have given using<!-- <option></option> tag-->, shoiuld be present between the  <!--<select></select> tag--></p>
+        
+        
+      <h3>Radio Button</h3>
+        <label>Gender</label>
+        <input type="radio" name="gen">Male
+        <input type="radio" name="gen">Female
+        <input type="radio" name="gen">Others
+        
+        <p>1.We can select only one option at a time </p>
+        
+        <p>2.Select input type "radio" to get radio buttons along with we have to give same name for all the elements using "name" attribute</p>
+        
+        
+        <h3>Upload Button</h3>
+        <label>Upload Your Resume:</label>
+        <input type="file">
+        
+        <h3>Text Area</h3>
+        <Textarea>Write Your Comments Here....!!!!</Textarea>
+        
+        
+        <h3>Reset Button</h3>
+        <input type="range">
+        
+         <h3>Reset Button</h3>
+        <input type="reset">
+        
+         <h3>Reset Button</h3>
+        <input type="search">
+        
+         <h3>Reset Button</h3>
+        <input type="color">
+        
+        <h3>Date and Time</h3>
+        <input type="datetime-local">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <br><br>
+        
+        
+        
+        
+<input type="submit">
+        
+        
+        
+        
+        
+        
+        
+        </form>    
+     </body>
+  </html>
